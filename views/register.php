@@ -45,7 +45,7 @@
             <h1 class="p-3 text-center">Formulario de registro</h1>
             <form method="post" id="formulario">
                 <div class="mb-3 ms-4 me-4">
-                    <label for="nit" class="form-label">Tipo de docuemnto(*)</label>
+                    <label for="nit" class="form-label">Tipo de docuemento(*)</label>
                     <select name="tipo_documento" class="form-select" required>
                         <option value="Cedula de ciudadania">Cedula de ciudadania</option>
                         <option value="Cedula de extrangeria">Cedula de extrangeria</option>

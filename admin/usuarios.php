@@ -82,6 +82,10 @@ include_once('header.php');
 
 </main>
 
+    <!--jquey -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="script/usuarios.js"></script>
 
 <?php
 include_once('footer.php');

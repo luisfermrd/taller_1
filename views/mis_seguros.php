@@ -9,7 +9,7 @@ if (!isset($_SESSION["names"]) || $_SESSION['rol'] != 0){
 else
 {
 
-  $sql = "SELECT * FROM vida as v LEFT JOIN more_users as m ON v.id_beneficiario = m.id LEFT JOIN pagos as p ON v.ref_pago = p.ref_pago WHERE v.id_user = '".$_SESSION['id']."';";
+  $sql = "SELECT * FROM vida as v LEFT JOIN clientes as m ON v.id_beneficiario = m.id LEFT JOIN pagos as p ON v.ref_pago = p.ref_pago WHERE v.id_user = '".$_SESSION['id']."';";
 
   include_once("../config/conexion.php");
 

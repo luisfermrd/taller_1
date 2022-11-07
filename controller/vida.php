@@ -69,10 +69,10 @@ if(strlen($num_documento)>10){
           if($row = mysqli_fetch_array($result)){
               $diferencia_dias = diferencia_dias_dos_fechas($fecha_inicio, $fecha_fin);
               $total = intval($diferencia_dias)*$row["$tipo_seguro"];
-              $ref_pago = random_int(10000000,9999999999);
+              $ref_pago = random_int(10000000,2147483647);
               $id = $_SESSION['id'];
 
-              $query = "INSERT INTO more_users(id, tipo_documento, names, email) VALUES ('$num_documento','$tipo_documento','$nombres','$email')";
+              $query = "INSERT INTO clientes(id, tipo_documento, names, email) VALUES ('$num_documento','$tipo_documento','$nombres','$email')";
 
               $query2 = "INSERT INTO vida(id_user, id_beneficiario, fecha_nacimineto, sexo, estado_civil, celular, direccion, ciudad, ingresos, profesion, medicamento, cual, eps_ips, fecha_inicio, fecha_fin, ref_pago, tipo, plan) VALUES ('$id','$num_documento','$fecha_nacimiento','$sexo','$estado_civil','$celular','$direccion','$ciudad','$ingreso','$profesion','$medicamento','$cual','$eps_ips','$fecha_inicio','$fecha_fin','$ref_pago', 'Seguro de vida', '$tipo_seguro')";
 

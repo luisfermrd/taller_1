@@ -9,7 +9,7 @@ define("DB_NAME", "seguros");
 define("DB_USERNAME", "root");
 
 //Contraseña del usuario de la base de datos
-define("DB_PASSWORD", "");
+define("DB_PASSWORD", "1234567890");
 
 
 //Definimos la url local
